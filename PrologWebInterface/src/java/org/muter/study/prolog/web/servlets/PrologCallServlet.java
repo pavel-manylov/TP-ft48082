@@ -31,7 +31,7 @@ public class PrologCallServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");        
+        response.setContentType("text/xml;charset=UTF-8");        
         try {
             XMLStreamWriter out = javax.xml.stream.XMLOutputFactory.newInstance().createXMLStreamWriter(response.getOutputStream(), "UTF-8");
             out.writeStartDocument();
